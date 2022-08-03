@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #a59484;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0.5em 0;
+  line-height: 1;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+header,
+footer {
+  padding: 1em;
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+main {
+  margin: 3em 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  margin: 1.5em 0;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.btn {
+  width: 100%;
+  max-width: 120px;
+  margin: 1em auto;
+  padding: 0.5em;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+}

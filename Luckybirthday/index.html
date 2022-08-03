@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imgs/cake.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/357dd17236.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lucky Birthday?</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="container content">
+      <main>
+        <img
+          id="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AvvRmyK-chpg7jref4OMpIhDtsvY91LNUSpGDqNQtuey4ylukwtEHPRFcjd9LfRd08A&usqp=CAU"
+          alt="birthday"
+        />
+        <div class="output" id="sad">
+          <img src="./imgs/sad.gif" alt="sad" />
+          <p>Sorry! Your birthday is not lucky</p>
+        </div>
+        <div class="output" id="yay">
+          <img src="./imgs/yay.gif" alt="yay" />
+          <p>Yay! Your birthday is lucky</p>
+        </div>
+        <h1>Is your Birthday lucky?</h1>
+
+        <form action="#">
+          <div class="form-control">
+            <label for="date">Enter your Date of Birth</label>
+            <input type="date" name="date" id="date" />
+            <div class="err" id="date-err"></div>
+          </div>
+          <div class="form-control">
+            <label for="date">Enter your lucky number</label>
+            <input
+              type="text"
+              name="num"
+              id="num"
+              placeholder="Your lucky number"
+              autocomplete="off"
+            />
+            <div class="err" id="num-err"></div>
+          </div>
+          <input type="submit" value="Check" class="btn" />
+        </form>
+        <div class="notice">Note: We're not using your data</div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <a
+          href="https://github.com/DineshRout779/levelZero-luckybirthday"
+          target="_blank"
+        >
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

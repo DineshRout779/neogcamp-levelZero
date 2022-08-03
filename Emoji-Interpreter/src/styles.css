@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+header {
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+  text-align: center;
+}
+
+main {
+  padding: 1em;
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  margin: 1em 0;
+  padding: 0.3em 1em;
+}
+
+input {
+  padding: 0.4em;
+  font-size: 1em;
+  margin: 2em 0;
+}
+
+.emojiList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+
+.emoji {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+}

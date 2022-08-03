@@ -1,0 +1,24 @@
+{
+  "name": "levelZero-marvelQuiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DineshRout779/levelZero-marvelQuiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DineshRout779/levelZero-marvelQuiz/issues"
+  },
+  "homepage": "https://github.com/DineshRout779/levelZero-marvelQuiz#readme",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "readline-sync": "^1.4.10"
+  }
+}

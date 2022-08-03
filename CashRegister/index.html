@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash register</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="app">
+        <h1>Cash register</h1>
+        <form class="form-group" id="bill-group" action="#">
+          <label for="bill-amt">Bill amount</label>
+          <input
+            type="text"
+            id="bill"
+            class="form-control"
+            autocomplete="off"
+          />
+          <div id="bill-err"></div>
+          <input type="submit" value="Check" class="btn" id="check-btn" />
+        </form>
+        <form class="form-group" id="cash-group" action="#">
+          <label for="bill-amt">Cash given</label>
+          <input
+            type="text"
+            id="cash"
+            class="form-control"
+            autocomplete="off"
+          />
+          <div id="cash-err"></div>
+          <input type="submit" value="Pay" class="btn" id="pay-btn" />
+        </form>
+        <div id="output"></div>
+        <table>
+          <!-- to be generated dynamically -->
+        </table>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

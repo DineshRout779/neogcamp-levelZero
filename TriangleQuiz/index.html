@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/357dd17236.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fun with &#x25B3;</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header container">
+        <h1>Fun With &#x25B3;s</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="tabs">
+          <div class="active-indicator"></div>
+          <div class="tab">Angles of &#x25B3;</div>
+          <div class="tab">Check hypotenuse</div>
+          <div class="tab">Calculate Area</div>
+          <div class="tab">Take a Quiz</div>
+        </div>
+        <div class="content-container">
+          <div class="content active">
+            <h1>Is Triangle?</h1>
+            <small>Enter three angles and check if they make a traingle.</small>
+            <form action="#" class="form">
+              <div class="form-group">
+                <label for="first-angle">Enter first angle</label>
+                <input
+                  type="number"
+                  placeholder="first angle"
+                  id="first-angle"
+                  class="form-control"
+                  min="0"
+                  max="360"
+                />
+              </div>
+              <div class="form-group">
+                <label for="second-angle">Enter second angle</label>
+                <input
+                  type="number"
+                  placeholder="second angle"
+                  id="second-angle"
+                  class="form-control"
+                  min="0"
+                  max="360"
+                />
+              </div>
+              <div class="form-group">
+                <label for="third-angle">Enter third angle</label>
+                <input
+                  type="number"
+                  placeholder="third angle"
+                  id="third-angle"
+                  class="form-control"
+                  min="0"
+                  max="360"
+                />
+              </div>
+              <div class="form-group btn-group">
+                <input
+                  type="submit"
+                  value="Check"
+                  class="form-control btn"
+                  id="angle-btn"
+                />
+                <input
+                  type="reset"
+                  value="Reset"
+                  class="form-control btn btn-rev reset"
+                />
+              </div>
+            </form>
+            <div class="output" id="angle-output"></div>
+          </div>
+          <div class="content">
+            <h1>Find hypotenuse</h1>
+            <small>Length of Hypotenuse = sqrt(base² + perpendicular²)</small>
+            <form action="#">
+              <div class="form-group">
+                <label for="base">Enter base length</label>
+                <input
+                  type="number"
+                  placeholder="Base length"
+                  id="base"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="second-angle">Enter perpendicular length</label>
+                <input
+                  type="number"
+                  placeholder="Perpendicular length"
+                  id="height"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group btn-group">
+                <input
+                  type="submit"
+                  class="form-control btn"
+                  id="hypotenuse-btn"
+                  value="Find hypotenuse"
+                />
+                <input
+                  type="reset"
+                  value="Reset"
+                  class="form-control btn btn-rev reset"
+                />
+              </div>
+            </form>
+            <div class="output" id="hypotenuse-output"></div>
+          </div>
+          <div class="content">
+            <h1>Calculate Area</h1>
+            <small>Area of a triangle = 1/2(Base * Height)</small>
+            <form action="#">
+              <div class="form-group">
+                <label for="base">Enter base length</label>
+                <input
+                  type="number"
+                  placeholder="Base length"
+                  id="base-of-triangle"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="second-angle">Enter height length</label>
+                <input
+                  type="number"
+                  placeholder="Height length"
+                  id="height-of-triangle"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group btn-group">
+                <input
+                  type="submit"
+                  class="form-control btn"
+                  id="area-btn"
+                  value="Find Area"
+                />
+                <input
+                  type="reset"
+                  value="Reset"
+                  class="form-control btn btn-rev reset"
+                />
+              </div>
+            </form>
+            <div class="output" id="area-output"></div>
+          </div>
+          <div class="content">
+            <h1>Take a Quiz</h1>
+            <small>Test your knowledge on &#x25B3;s</small>
+            <form action="#" class="form" name="quiz">
+              <div class="form-group">
+                <p class="que">
+                  1. What is the third angle for the triangle where angle1 = 45°
+                  and angle2 = 45°?
+                </p>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="first-ans"
+                    id="first-que-first-ans"
+                    value="45degree"
+                  />
+                  <label for="first-que-first-ans" class="inline-label"
+                    >45<sup>o</sup></label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="first-ans"
+                    id="first-que-second-ans"
+                    value="60degree"
+                  />
+                  <label for="first-que-second-ans" class="inline-label"
+                    >60<sup>o</sup></label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="first-ans"
+                    id="first-que-third-ans"
+                    value="90degree"
+                  />
+                  <label for="first-que-third-ans" class="inline-label"
+                    >90<sup>o</sup></label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <p class="que">
+                  2. If a triangle has an angle of 90 degrees, what is it
+                  called?
+                </p>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="second-ans"
+                    id="second-que-first-ans"
+                    value="obtuse "
+                  />
+                  <label for="second-que-first-ans" class="inline-label"
+                    >obtuse</label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="second-ans"
+                    id="second-que-second-ans"
+                    value="acute"
+                  />
+                  <label for="second-que-second-ans" class="inline-label"
+                    >acute</label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="second-ans"
+                    id="second-que-third-ans"
+                    value="right-angled"
+                  />
+                  <label for="second-que-third-ans" class="inline-label"
+                    >right-angled</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <p class="que">
+                  3. What is the length of hypotenuse if the height is 5 units
+                  and base is 12 units?
+                </p>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="third-ans"
+                    id="third-que-first-ans"
+                    value="13"
+                  />
+                  <label for="third-que-first-ans" class="inline-label"
+                    >13</label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="third-ans"
+                    id="third-que-second-ans"
+                    value="17"
+                  />
+                  <label for="third-que-second-ans" class="inline-label"
+                    >17</label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="third-ans"
+                    id="third-que-third-ans"
+                    value="60"
+                  />
+                  <label for="third-que-third-ans" class="inline-label"
+                    >60</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <p class="que">
+                  4. What is the name of the segment that joins the midpoints of
+                  the sides of a triangle?
+                </p>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="fourth-ans"
+                    id="fourth-que-first-ans"
+                    value="median"
+                  />
+                  <label for="fourth-que-first-ans" class="inline-label"
+                    >Median</label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="fourth-ans"
+                    id="fourth-que-second-ans"
+                    value="centroid"
+                  />
+                  <label for="fourth-que-second-ans" class="inline-label"
+                    >Centroid</label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="fourth-ans"
+                    id="fourth-que-third-ans"
+                    value="vertex"
+                  />
+                  <label for="fourth-que-third-ans" class="inline-label"
+                    >Vertex</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <p class="que">5. Isoscele triangle is defined as</p>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="fifth-ans"
+                    id="fifth-que-first-ans"
+                    value="two-sides"
+                  />
+                  <label for="fifth-que-first-ans" class="inline-label"
+                    >Two sides are equal</label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="fifth-ans"
+                    id="fifth-que-second-ans"
+                    value="all-sides"
+                  />
+                  <label for="fifth-que-second-ans" class="inline-label"
+                    >All sides are equal</label
+                  >
+                </div>
+                <div class="flex">
+                  <input
+                    type="radio"
+                    name="fifth-ans"
+                    id="fifth-que-third-ans"
+                    value="no-sides"
+                  />
+                  <label for="fifth-que-third-ans" class="inline-label"
+                    >No sides are equal</label
+                  >
+                </div>
+              </div>
+              <div class="form-group btn-group">
+                <input
+                  type="submit"
+                  class="form-control btn"
+                  id="quiz-btn"
+                  value="Submit"
+                />
+                <input
+                  type="reset"
+                  value="Reset"
+                  class="form-control btn btn-rev reset"
+                />
+              </div>
+            </form>
+            <div class="output" id="quiz-output"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <a
+          href="https://www.linkedin.com/in/dinesh-rout-a36306179/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://twitter.com/DineshRout779" target="_blank">Twitter</a>
+        <a href="https://github.com/DineshRout779" target="_blank">Github</a>
+      </footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
